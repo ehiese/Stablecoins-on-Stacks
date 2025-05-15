@@ -53,7 +53,6 @@
 ;; Get token name
 (define-read-only (get-name)
   (var-get token-name))
-
 ;; Get token symbol
 (define-read-only (get-symbol)
   (var-get token-symbol))
