@@ -68,7 +68,6 @@
 ;; Get allowance
 (define-read-only (get-allowance (owner principal) (spender principal))
   (default-to u0 (map-get? allowances {owner: owner, spender: spender})))
-
 ;; Transfer tokens
 (define-public (transfer (amount uint) (recipient principal))
   (let ((sender-balance (get-balance tx-sender))
