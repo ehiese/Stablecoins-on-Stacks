@@ -99,7 +99,6 @@
     (map-set allowances {owner: sender, spender: tx-sender} (- current-allowance amount))
     
     (ok true)))
-
 ;; Approve spending
 (define-public (approve (amount uint) (spender principal))
   (begin
