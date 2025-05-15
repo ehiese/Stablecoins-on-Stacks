@@ -172,7 +172,6 @@
     (asserts! (is-authorized) (err ERR-NOT-AUTHORIZED))
     (map-set blacklisted address false)
     (ok true)))
-
 ;; Set token metadata URI
 (define-public (set-token-uri (new-uri (string-utf8 256)))
   (begin
