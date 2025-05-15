@@ -136,7 +136,6 @@
     (map-set balances tx-sender (- current-balance amount))
     
     (ok true)))
-
 ;; Administrative functions (only contract owner)
 
 ;; Set new contract owner
